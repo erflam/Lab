@@ -1,8 +1,8 @@
 import pandas as pd
 
 # Load CSV files
-library_df = pd.read_csv("/Users/elizabethflammer/Desktop/library.csv")   # columns: name, mz
-data_df = pd.read_csv("/Users/elizabethflammer/Desktop/data.csv")         # column: mz
+library_df = pd.read_csv("library.csv")   # columns: name, mz
+data_df = pd.read_csv("data.csv")         # column: mz
 
 mz_tolerance = 0.0002
 matches = []
@@ -27,6 +27,6 @@ for _, data_row in data_df.iterrows():
 matched_df = pd.DataFrame(matches)
 
 # Save to CSV
-matched_df.to_csv("/Users/elizabethflammer/Desktop/matched_results.csv", index=False)
+matched_df.to_csv("matched_results.csv", index=False)
 
 print("Matching complete. Output saved as matched_results.csv")
