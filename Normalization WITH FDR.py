@@ -7,11 +7,11 @@ from statsmodels.stats.multitest import multipletests
 #THIS IS FOR UN-NORMALIZED DATA WITH SAMPLES AS COLUMNS
 
 # USER INPUT + OUTPUT FILES
-input_file = "/Users/elizabethflammer/Desktop/Metformin POS 26W Grouping.csv"
+input_file = "Unnormalized.csv"
 
-output_normalized_csv = "/Users/elizabethflammer/Desktop/26W POS Norm.csv"
-output_plot = "/Users/elizabethflammer/Desktop/26W POS Norm.png"
-output_significant_excel = "/Users/elizabethflammer/Desktop/26W POS Norm FDR.xlsx"
+output_normalized_csv = "Normalized.csv"
+output_plot = "Normalized.png"
+output_significant_excel = "Normalized TTest with FDR.xlsx"
 
 # 1. Load CSV
 df = pd.read_csv(input_file, header=None)
